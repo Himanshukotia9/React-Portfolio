@@ -1,20 +1,24 @@
 import React from 'react'
-import Sidebar, { SidebarItem } from './Pages/Components/Sidebar'
-import { Github,PencilRuler,Headset,GraduationCap,House,Linkedin,CircleUser } from 'lucide-react'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import HomePage from './Pages/HomePage'
+import SidebarComp from './Pages/Components/SidebarComp'
+import Education from './Pages/Education'
+import ContactPage from './Pages/ContactPage'
 
 export default function App() {
   return (
-    <div>
-      <Sidebar>
-      <SidebarItem icon={<House size={20}/>} text='Home' alert/>
-        <SidebarItem icon={<CircleUser size={20}/>} text='About' active/>
-        <SidebarItem icon={<GraduationCap size={20}/>} text='Education'/>
-        <SidebarItem icon={<PencilRuler size={20}/>} text='Skills'/>
-        <SidebarItem icon={<Headset size={20}/>} text='Contact' alert/>
-        <hr className='my-3' />
-        <SidebarItem icon={<Linkedin size={20}/>} text='LinkedIn'/>
-        <SidebarItem icon={<Github size={20}/>} text='GitHub'/>
-      </Sidebar>
+    <div className='flex h-screen overflow-hidden'>
+      <BrowserRouter>
+        <SidebarComp />
+          <div className='flex-1 overflow-y-auto'>
+            <Routes>
+              <Route path='/' element= {<HomePage/>}/>
+              <Route path='/education' element= {<Education/>}/>
+              <Route path='/contact' element= {<ContactPage/>}/>
+            </Routes>  
+          </div>  
+      </BrowserRouter>
+      
     </div>
   )
 }
