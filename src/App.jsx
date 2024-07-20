@@ -13,15 +13,18 @@ export default function App() {
     <div className='flex h-screen overflow-hidden'>
       <BrowserRouter>
         <SidebarComp />
-          <div className='flex-1 overflow-y-auto'>
-            <Routes>
-              <Route path='/' element= {<HomePage/>}/>
-              <Route path='/about' element= {<AboutPage/>}/>
-              <Route path='/projects' element= {<Projects/>}/>
-              <Route path='/skills' element= {<SkillsPage/>}/>
-              <Route path='/contact' element= {<ContactPage/>}/>
-            </Routes>  
-            <Footer/>
+          <div className='flex-1 flex flex-col'>
+            <div className='flex-1 overflow-y-auto'>
+              <Routes>
+                <Route path='/' element= {<HomePage/>}/>
+                <Route path='/home' element= {<HomePage/>}/>
+                <Route path='/about' element= {<AboutPage/>}/>
+                <Route path='/projects' element= {<Projects/>}/>
+                <Route path='/skills' element= {<SkillsPage/>}/>
+                <Route path='/contact' element= {<ContactPage/>}/>
+              </Routes>  
+              <Footer/>
+            </div>
           </div>  
       </BrowserRouter>
     </div>
