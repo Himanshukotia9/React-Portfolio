@@ -10,7 +10,7 @@ export default function Projects() {
         {PROJECTS.map((project, index) => (
           <div key={index} className='mb-8 block'>
             <div className='flex flex-col lg:flex-row
-            justify-evenly items-center lg:justify-between shadow-lg rounded-lg lg:shadow-none lg:rounded-none overflow-hidden transition-transform transform hover:scale-105'>
+            justify-evenly items-center scale-95 lg:justify-between shadow-lg rounded-lg lg:shadow-none lg:rounded-none overflow-hidden transition-transform transform hover:scale-100'>
               <img src={project.image} alt={project.title} className='w-full lg:w-1/3 h-auto border my-auto rounded-sm object-cover'/>
               <div className='p-6 lg:w-2/3'>
                 <h6 className='mb-2 font-semibold text-xl'>{project.title}</h6>

@@ -57,8 +57,8 @@ return (
             </form>
         </div>
         <div className='flex justify-between'>
-            <button className='py-2 px-5 bg-blue-600 rounded-lg border text-white font-bold hover:bg-blue-700 transition-all'><Link to='/contact'>Previous</Link></button>
-            <button className='py-2 px-5 bg-blue-600 rounded-lg border text-white font-bold hover:bg-blue-700 transition-all'><Link to='/about'>Next</Link></button>
+            <button className='py-2 px-5 bg-blue-600 rounded-lg border text-white font-bold hover:bg-blue-700 transition-all'><Link to='/skills'>Previous</Link></button>
+            <button className='py-2 px-5 bg-blue-600 rounded-lg border text-white font-bold hover:bg-blue-700 transition-all'><Link to='/'>Next</Link></button>
         </div>
     </div>
     )  
