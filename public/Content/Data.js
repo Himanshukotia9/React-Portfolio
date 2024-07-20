@@ -1,11 +1,11 @@
-import project1 from "/public/Images/Projects/Prime-Insight.jpg";
-import project2 from "/public/Images/Projects/Typo-Mania.jpg";
-import project3 from "/public/Images/Projects/Chore-Champ.jpg";
-import project4 from "/public/Images/Projects/Coin-Counter.jpg";
-import project5 from "/public/Images/Projects/Match-Mastery.jpg";
-import project6 from "/public/Images/Projects/Four-Mation.jpg";
-import project7 from "/public/Images/Projects/Ecommerce-Landing-Page.jpg";
-import project8 from "/public/Images/Projects/Score-Keeper.jpg";
+import project1 from "/Images/Projects/Prime-Insight.jpg";
+import project2 from "/Images/Projects/Typo-Mania.jpg";
+import project3 from "/Images/Projects/Chore-Champ.jpg";
+import project4 from "/Images/Projects/Coin-Counter.jpg";
+import project5 from "/Images/Projects/Match-Mastery.jpg";
+import project6 from "/Images/Projects/Four-Mation.jpg";
+import project7 from "/Images/Projects/Ecommerce-Landing-Page.jpg";
+import project8 from "/Images/Projects/Score-Keeper.jpg";
 
 export const HOME_TEXT = `Welcome to my portfolio website! I am thrilled to showcase my skills and projects as a frontend developer. With a passion for creating visually appealing and user-friendly websites, I strive to bring innovative ideas to life through clean and efficient code. From crafting responsive layouts to implementing interactive features, I am constantly pushing the boundaries of web development. Through this portfolio, I invite you to explore my work and witness my dedication to delivering exceptional digital experiences. Join me on this journey as we embark on the exciting world of frontend development together. Let's create something remarkable!`;
 
