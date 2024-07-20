@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { ABOUT_TEXT } from '../../public/Content/Data'
 
 export default function AboutPage() {
   return (
@@ -15,7 +16,7 @@ export default function AboutPage() {
           </div>
           <div className='w-full lg:w-1/2'>
               <div className='flex justify-center lg:justify-start'>
-                <p className='my-2 max-w-xl py-6'>As a front-end web developer, I have worked as a intern in a company to create visually stunning and functional websites that have enhanced user experience and increased business productivity. My responsibilities included developing and implementing responsive designs, optimising website performance, and ensuring cross-browser compatibility. I have experience in programming languages like HTML, CSS, and JavaScript. Additionally, I have worked with designers to ensure that websites meet branding guidelines. My passion for staying up-to-date with the latest web development trends and technologies has allowed me to deliver innovative solutions that exceed client expectations.</p>
+                <p className='my-2 max-w-xl py-6'>{ABOUT_TEXT}</p>
               </div>
             </div>
         </div>
