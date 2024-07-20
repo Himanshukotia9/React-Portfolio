@@ -5,7 +5,7 @@ import { PROJECTS } from '../../public/Content/Data'
 export default function Projects() {
   return (
     <div className='bg-slate-100 pb-8'>
-      <h1 className='text-5xl py-20 text-center'>Projects</h1>
+      <h1 className='text-4xl lg:text-5xl py-5 text-center font-semibold lg:py-14'>Projects</h1>
       <div className='px-4'>
         {PROJECTS.map((project, index) => (
           <div key={index} className='mb-8 block'>
