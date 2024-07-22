@@ -5,7 +5,8 @@ import { Link } from 'react-router-dom'
 const SidebarContext = createContext()
 export default function Sidebar({children}) {
 
-    const[expanded,setExpanded] = useState(true)
+    const[expanded,setExpanded] = useState(true);
+    const[activeItem,setactiveItem] = useState(null);
 
     const handleResize = () => {
         if (window.innerWidth <= 768) {
@@ -35,7 +36,7 @@ export default function Sidebar({children}) {
                 </button>
             </div>
 
-            <SidebarContext.Provider value={{expanded}}>
+            <SidebarContext.Provider value={{expanded, activeItem, setactiveItem}}>
                 <ul className='flex-1 px-3'>{children}</ul>
             </SidebarContext.Provider>
 
@@ -55,8 +56,12 @@ export default function Sidebar({children}) {
   )
 }
 
-export function SidebarItem({icon, text, active, to, externalLink}){
-    const {expanded} = React.useContext(SidebarContext)
+export function SidebarItem({icon, text, to, externalLink}){
+    const {expanded, activeItem, setactiveItem} = React.useContext(SidebarContext);
+    function handleClick(){
+        setactiveItem(text)
+    }
+
     const content = (
         <>
             {icon}
@@ -70,7 +75,7 @@ export function SidebarItem({icon, text, active, to, externalLink}){
 
     if(externalLink){
         return (
-            <li className={`relative flex items-center py-2 px-3 my-1 font-medium rounded-md cursor-pointer transition-colors group ${active ? 'bg-gradient-to-t from-indigo-200 to-indigo-100 text-indigo-800' : 'hover:bg-indigo-50 text-gray-600'}`}>
+            <li className={`relative flex items-center py-2 px-3 my-1 font-medium rounded-md cursor-pointer transition-colors group ${activeItem === text ? 'bg-gradient-to-t from-indigo-200 to-indigo-100 text-indigo-800' : 'hover:bg-indigo-50 text-gray-600'}`} onClick={handleClick}>
                 <a href={externalLink} target="_blank" rel="noreferrer" className='flex items-center w-ful'>
                     {content}
                 </a>
@@ -78,7 +83,7 @@ export function SidebarItem({icon, text, active, to, externalLink}){
         );
     }else{
         return (
-            <li className={`relative flex items-center py-2 px-3 my-1 font-medium rounded-md cursor-pointer transition-colors group ${active ? 'bg-gradient-to-t from-indigo-200 to-indigo-100 text-indigo-800' : 'hover:bg-indigo-50 text-gray-600'}`}>
+            <li className={`relative flex items-center py-2 px-3 my-1 font-medium rounded-md cursor-pointer transition-colors group ${activeItem === text ? 'bg-gradient-to-t from-indigo-200 to-indigo-100 text-indigo-800' : 'hover:bg-indigo-50 text-gray-600'}`} onClick={handleClick}>
                 <Link to={to} className="flex items-center w-full">
                 {content}
                 </Link>

@@ -7,7 +7,7 @@ export default function SidebarComp() {
     <div>
       <Sidebar>
         <SidebarItem icon={<House size={20}/>} text='Home' to='/'/>
-        <SidebarItem icon={<CircleUser size={20}/>} text='About' to='/about' active/>
+        <SidebarItem icon={<CircleUser size={20}/>} text='About' to='/about'/>
         <SidebarItem icon={<Lightbulb size={20}/>} text='Projects' to='/projects'/>
         <SidebarItem icon={<PencilRuler size={20}/>} text='Skills' to='/skills'/>
         <SidebarItem icon={<Headset size={20}/>} text='Contact' to='/contact'/>
