@@ -5,7 +5,7 @@ import { ABOUT_TEXT } from '../../public/Content/Data'
 export default function AboutPage() {
   return (
     <div className='bg-slate-100 p-4'>
-        <h1 className='text-4xl lg:text-5xl py-5 text-center font-semibold lg:py-14'>About
+        <h1 className='text-4xl lg:text-5xl py-5 text-center text-slate-700 font-semibold lg:py-14'>About
           <span className='text-neutral-500'> Me</span>
         </h1>
         <div className='flex flex-wrap items-center justify-evenly'>
@@ -16,7 +16,7 @@ export default function AboutPage() {
           </div>
           <div className='w-full lg:w-1/2'>
               <div className='flex justify-center lg:justify-start'>
-                <p className='my-2 max-w-xl py-6'>{ABOUT_TEXT}</p>
+                <p className='my-2 text-slate-500 max-w-xl py-6'>{ABOUT_TEXT}</p>
               </div>
             </div>
         </div>
