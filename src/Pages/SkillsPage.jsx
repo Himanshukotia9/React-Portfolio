@@ -11,7 +11,7 @@ export default function SkillsPage() {
   return (
     <div className='min-h-screen flex flex-col bg-slate-100'>
       <div className='flex-grow p-4'>
-        <h1 className='text-6xl my-20 text-center'>Skills</h1>
+        <h1 className='text-4xl lg:text-5xl py-5 text-center font-semibold text-slate-700 lg:py-14'>Skills</h1>
         <div className='flex flex-wrap justify-center items-center gap-4'>
           <div className='rounded-2xl border-4 border-slate-400 p-4'>
             <FaHtml5 className='text-7xl text-orange-500'/>

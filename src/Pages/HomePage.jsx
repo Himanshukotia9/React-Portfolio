@@ -5,7 +5,7 @@ import { HOME_TEXT } from '../../public/Content/Data'
 
 export default function HomePage() {
   return (
-    <div className='flex flex-col min-h-screen'>
+    <div className=' flex flex-col min-h-screen'>
       <section className="p-4 bg-slate-100 flex-1 flex flex-col justify-center" id="home">
         <div className=' flex flex-row justify-evenly items-center mt-auto'>
             <div className='w-full sm:w-3/4'>
