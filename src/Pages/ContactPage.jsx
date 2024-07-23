@@ -2,6 +2,9 @@ import React, { useRef }  from 'react'
 import { useForm } from "react-hook-form";
 import { Link } from 'react-router-dom';
 import emailjs from '@emailjs/browser';
+// npm react tostify package
+import { ToastContainer, toast, Bounce  } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 export default function ContactPage() {
 
@@ -17,6 +20,8 @@ export default function ContactPage() {
         .then(
             () => {
                 console.log('SUCCESS!');
+                const notify = () => toast.success("Message Sent!");
+                notify();
                 reset();
             },
             (error) => {
@@ -61,6 +66,8 @@ return (
                     {errors.text_message && <span className='text-red-500'>{errors.text_message.message}</span>}
                 </div>
                 <button type="submit" className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Submit</button>
+                {/* npm react tostify package */}
+                <ToastContainer position="bottom-right" autoClose={5000} hideProgressBar={false} newestOnTop={false} closeOnClick rtl={false} pauseOnFocusLoss draggable pauseOnHover theme="light" transition={Bounce}/>
             </form>
         </div>
         <div className='flex justify-between'>
