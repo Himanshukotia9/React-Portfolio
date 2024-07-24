@@ -9,8 +9,8 @@ import { RiTailwindCssFill } from "react-icons/ri";
 
 export default function SkillsPage() {
   return (
-    <div className='min-h-screen flex flex-col bg-slate-100'>
-      <div className='flex-grow p-4'>
+    <div className='min-h-screen flex flex-col bg-slate-100 p-4'>
+      <div className='flex-grow '>
         <h1 className='text-4xl lg:text-5xl py-5 text-center font-semibold text-slate-700 lg:py-14'>Skills</h1>
         <div className='flex flex-wrap justify-center items-center gap-4'>
           <div className='rounded-2xl border-4 border-slate-400 p-4'>
@@ -33,7 +33,7 @@ export default function SkillsPage() {
           </div>
         </div>
       </div>
-      <div className='flex justify-between p-4' id='navigation-btn'>
+      <div className='flex justify-between mt-auto' id='navigation-btn'>
           <button className='py-2 px-5 bg-blue-600 rounded-lg border text-white font-bold hover:bg-blue-700 transition-all'><Link to='/projects'>Previous</Link></button>
           <button className='py-2 px-5 bg-blue-600 rounded-lg border text-white font-bold hover:bg-blue-700 transition-all'><Link to='/contact'>Next</Link></button>
         </div>

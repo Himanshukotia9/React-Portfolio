@@ -34,7 +34,7 @@ export default function ContactPage() {
   
   return (
     <section className='w-full min-h-screen grid items-center bg-slate-100 p-4'>
-        <div id='contact-in' className='h-auto m-auto flex flex-wrap flex-col lg:flex-row md:w-3/4 lg:w-4/5 p-3 rounded-xl shadow-sm bg-slate-200'>
+        <div id='contact-in' className='w-4/5 h-auto m-auto flex flex-wrap p-3 rounded-xl shadow-sm bg-slate-200'>
             <div className='w-full h-auto flex-[50%]' id='contact-map'>
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6167.320766090233!2d75.5987172498805!3d31.343642680270325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391a5a5747a9eb91%3A0xc74b34c05aa5b4b8!2sJalandhar%2C%20Punjab!5e1!3m2!1sen!2sin!4v1721747189295!5m2!1sen!2sin"
@@ -49,8 +49,8 @@ export default function ContactPage() {
             </div>
             <div id='contact-form' className='w-full h-auto flex-[50%]'>
                 <h1 className='mb-3 text-2xl lg:text-3xl text-center text-slate-700 font-semibold'>Contact<span className='text-neutral-500'> Me</span></h1>
-                <form className="max-w-md m-auto lg:p-5 rounded-2xl w-10/12" ref={form} onSubmit={handleSubmit(onSubmit)}>
-                        <div className="grid xl:grid-cols-2 xl:gap-6">
+                <form className="max-w-md m-auto p-5 rounded-2xl w-10/12" ref={form} onSubmit={handleSubmit(onSubmit)}>
+                        <div className="grid md:grid-cols-2 md:gap-6">
                             <div className="relative z-0 w-full mb-5 group">
                                 <input type="text" name="full_name" id="floating_full_name" className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " {...register('full_name',{required:'Full Name is required'})}/>
                                 <label htmlFor="floating_full_name" className="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Full name</label>
@@ -62,7 +62,7 @@ export default function ContactPage() {
                                 {errors.phone_number && <span className='text-red-500'>{errors.phone_number.message}</span>}
                             </div>
                         </div>
-                        <div className="grid xl:grid-cols-2 xl:gap-6">
+                        <div className="grid md:grid-cols-2 md:gap-6">
                             <div className="relative z-0 w-full mb-5 group">
                                 <input type="email" name="email" id="floating_email" className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " {...register('email',{required:'Email address is required', pattern:{value:/^([a-zA-Z0-9._%-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,3})$/,message:'Email is invalid'}})} />
                                 <label htmlFor="floating_email" className="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Email address</label>

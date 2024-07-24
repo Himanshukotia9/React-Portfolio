@@ -4,9 +4,9 @@ import { PROJECTS } from '../../public/Content/Data'
 
 export default function Projects() {
   return (
-    <div className='bg-slate-100 pb-8'>
+    <div className='bg-slate-100 pb-8 px-4'>
       <h1 className='text-4xl lg:text-5xl py-5 text-center font-semibold text-slate-700 lg:py-14'>Projects</h1>
-      <div className='px-4'>
+      <div className=''>
         {PROJECTS.map((project, index) => (
           <div key={index} className='mb-8 block'>
             <div className='flex flex-col lg:flex-row
@@ -25,7 +25,7 @@ export default function Projects() {
           </div>
         ))}
       </div>
-      <div className=' mt-auto flex justify-between px-4' id='navigation-btn'>
+      <div className=' mt-auto flex justify-between ' id='navigation-btn'>
           <button className='py-2 px-5 bg-blue-600 rounded-lg border text-white font-bold hover:bg-blue-700 transition-all'><Link to='/about'>Previous</Link></button>
           <button className='py-2 px-5 bg-blue-600 rounded-lg border text-white font-bold hover:bg-blue-700 transition-all'><Link to='/skills'>Next</Link></button>
         </div>

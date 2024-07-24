@@ -20,7 +20,7 @@ export default function AboutPage() {
               </div>
             </div>
         </div>
-        <div className='flex justify-between'>
+        <div className='flex justify-between mt-auto' id='navigation-btn'>
           <button className='py-2 px-5 bg-blue-600 rounded-lg border text-white font-bold hover:bg-blue-700 transition-all'><Link to='/'>Previous</Link></button>
           <button className='py-2 px-5 bg-blue-600 rounded-lg border text-white font-bold hover:bg-blue-700 transition-all'><Link to='/projects'>Next</Link></button>
         </div>
