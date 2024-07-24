@@ -49,7 +49,7 @@ export default function ContactPage() {
             </div>
             <div id='contact-form' className='w-full h-auto flex-[50%]'>
                 <h1 className='mb-3 text-2xl lg:text-3xl text-center text-slate-700 font-semibold'>Contact<span className='text-neutral-500'> Me</span></h1>
-                <form className="max-w-md m-auto lg:p-5 rounded-2xl w-10/12" ref={form} onSubmit={handleSubmit(onSubmit)}>
+                <form className="max-w-md m-auto lg:p-3 rounded-2xl w-10/12" ref={form} onSubmit={handleSubmit(onSubmit)}>
                         <div className="grid xl:grid-cols-2 xl:gap-6">
                             <div className="relative z-0 w-full mb-5 group">
                                 <input type="text" name="full_name" id="floating_full_name" className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " {...register('full_name',{required:'Full Name is required'})}/>
