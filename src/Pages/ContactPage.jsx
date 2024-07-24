@@ -5,6 +5,7 @@ import emailjs from '@emailjs/browser';
 // npm react tostify package
 import { ToastContainer, toast, Bounce  } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { motion } from "framer-motion"
 
 export default function ContactPage() {
 

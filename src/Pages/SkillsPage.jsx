@@ -6,6 +6,7 @@ import { FaCss3Alt } from "react-icons/fa";
 import { FaBootstrap } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io5";
 import { RiTailwindCssFill } from "react-icons/ri";
+import { motion } from "framer-motion"
 
 export default function SkillsPage() {
   return (
