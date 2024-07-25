@@ -31,13 +31,30 @@ export default function ContactPage() {
         );
     }
 
+    const container = (delay) => ({
+        hidden: { x:-100, opacity: 0 },
+        visible:{
+          x:0,
+          opacity: 1,
+          transition: { delay: delay, duration: 0.5 }
+        },
+      });
+      
+      const container2 = (delay) => ({
+        hidden: { x:100, opacity: 0 },
+        visible:{
+          x:0,
+          opacity: 1,
+          transition: { delay: delay, duration: 0.5 }
+        },
+      });
   
-  
-  return (
+return (
     <section className='w-full min-h-screen grid items-center bg-slate-100 p-4'>
-        <div id='contact-in' className='h-auto m-auto flex flex-wrap flex-col lg:flex-row md:w-3/4 lg:w-4/5 p-3 rounded-xl shadow-sm bg-slate-200'>
+        <motion.h1 initial={{y:-100, opacity:0}} animate={{y:0, opacity:1}} transition={{ delay: 0.3, duration: 0.5}} className='text-4xl lg:text-5xl py-5 text-center text-slate-700 font-semibold lg:py-14'>Contact<span className='text-neutral-500'> Me</span></motion.h1>
+        <motion.div initial={{opacity:0}} animate={{opacity:1}} transition={{ delay: 0.5, duration: 0.5}} id='contact-in' className='h-auto m-auto flex flex-wrap flex-col lg:flex-row md:w-3/4 lg:w-4/5 p-3 rounded-xl shadow-sm bg-slate-200'>
             <div className='w-full h-auto flex-[50%]' id='contact-map'>
-                <iframe
+                <motion.iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6167.320766090233!2d75.5987172498805!3d31.343642680270325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391a5a5747a9eb91%3A0xc74b34c05aa5b4b8!2sJalandhar%2C%20Punjab!5e1!3m2!1sen!2sin!4v1721747189295!5m2!1sen!2sin"
                     width="100%"
                     height="auto"
@@ -46,11 +63,13 @@ export default function ContactPage() {
                     loading="lazy"
                     referrerPolicy="no-referrer-when-downgrade"
                     className='w-full h-full rounded-xl'
-                ></iframe>
+                    variants={container(0.5)}
+                    initial="hidden" animate="visible"
+                ></motion.iframe>
             </div>
             <div id='contact-form' className='w-full h-auto flex-[50%]'>
-                <h1 className='mb-3 text-2xl lg:text-3xl text-center text-slate-700 font-semibold'>Contact<span className='text-neutral-500'> Me</span></h1>
-                <form className="max-w-md m-auto lg:p-3 rounded-2xl w-10/12" ref={form} onSubmit={handleSubmit(onSubmit)}>
+                <motion.form variants={container2(0.5)}
+                initial="hidden" animate="visible" className="max-w-md m-auto lg:p-3 rounded-2xl w-10/12" ref={form} onSubmit={handleSubmit(onSubmit)}>
                         <div className="grid xl:grid-cols-2 xl:gap-6">
                             <div className="relative z-0 w-full mb-5 group">
                                 <input type="text" name="full_name" id="floating_full_name" className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " {...register('full_name',{required:'Full Name is required'})}/>
@@ -83,12 +102,14 @@ export default function ContactPage() {
                         <button type="submit" className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Submit</button>
                         {/* npm react tostify package */}
                         <ToastContainer position="bottom-right" autoClose={5000} hideProgressBar={false} newestOnTop={false} closeOnClick rtl={false} pauseOnFocusLoss draggable pauseOnHover theme="light" transition={Bounce}/>
-                    </form>
+                    </motion.form>
             </div>
-        </div>
+        </motion.div>
         <div className='flex justify-between mt-auto' id='navigation-btn'>
-            <button className='py-2 px-5 bg-blue-600 rounded-lg border text-white font-bold hover:bg-blue-700 transition-all'><Link to='/skills'>Previous</Link></button>
-            <button className='py-2 px-5 bg-blue-600 rounded-lg border text-white font-bold hover:bg-blue-700 transition-all'><Link to='/'>Next</Link></button>
+            <motion.button variants={container(0.7)}
+                initial="hidden" animate="visible" className='py-2 px-5 bg-blue-600 rounded-lg border text-white font-bold hover:bg-blue-700 transition-all'><Link to='/skills'>Previous</Link></motion.button>
+            <motion.button variants={container2(0.7)}
+                initial="hidden" animate="visible" className='py-2 px-5 bg-blue-600 rounded-lg border text-white font-bold hover:bg-blue-700 transition-all'><Link to='/'>Next</Link></motion.button>
         </div>
     </section>
   )

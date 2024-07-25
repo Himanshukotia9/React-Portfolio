@@ -38,7 +38,7 @@ export default function Projects() {
                 <p className='mb-4 text-slate-500'>{project.description}</p>
                 <div className='flex flex-wrap'>
                   {project.technologies.map((tech, index) => (
-                    <span key={index} className='mr-2 mb-2 rounded bg-neutral-900 text-white px-2 py-1 text-sm font-medium'>{tech}</span>
+                    <span key={index} className='mr-2 mb-2 rounded bg-neutral-500 text-white px-2 py-1 text-sm font-medium'>{tech}</span>
                   ))}
                 </div>
               </motion.div>
