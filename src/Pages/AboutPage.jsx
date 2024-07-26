@@ -31,7 +31,7 @@ export default function AboutPage() {
           <div className='w-full lg:w-1/2 p-8'>
             <div className='flex items-center justify-center'>
               <motion.img variants={container(0.5)}
-                initial="hidden" animate="visible" src="./public/Images/About.jpg" alt="about" className='rounded-2xl h-44 w-auto lg:h-96'/>
+                initial="hidden" animate="visible" src="/Images/About.jpg" alt="about" className='rounded-2xl h-44 w-auto lg:h-96'/>
             </div>
           </div>
           <div className='w-full lg:w-1/2'>
