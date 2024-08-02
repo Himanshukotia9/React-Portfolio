@@ -21,8 +21,8 @@ export default function HomePage() {
                 <motion.h1 variants={container(0.3)}
                 initial="hidden" animate="visible" className='text-4xl text-slate-700 py-2 font-semibold md:text-6xl'>Hi, I'm Himanshu Kotia</motion.h1>
                 <div className="text-animate flex">
-                    <motion.h3 variants={container(0.5)}
-                initial="hidden" animate="visible" className='text-3xl font-semibold py-2 bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text tracking-tight text-transparent md:text-5xl'>Frontend Developer</motion.h3>
+                    <motion.h2 variants={container(0.5)}
+                initial="hidden" animate="visible" className='text-3xl font-semibold py-2 bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text tracking-tight text-transparent md:text-5xl'>Frontend Developer</motion.h2>
                 </div>
                 <motion.p variants={container(0.7)}
                 initial="hidden" animate="visible"  className='py-2 text-slate-500 md:text-lg'>{HOME_TEXT}</motion.p>

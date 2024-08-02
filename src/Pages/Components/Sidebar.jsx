@@ -31,7 +31,7 @@ export default function Sidebar({children}) {
         <nav className={`h-full max-w-72 flex flex-col bg-slate-50 border-r shadow-sm ${ expanded ? 'max-w-72' : 'max-w-min'}`}>
             <div className='p-4 pb-2 flex justify-between items-center'>
                 <img src="/Images/Himanshu-Kotia.svg" alt="Logo" className={`overflow-hidden transition-all ${expanded ? 'w-32' : 'w-0'}`}/>
-                <button onClick={() => setExpanded(curr =>!curr)} className='p-1.5 rounded-lg bg-gray-50 hover:bg-gray-100'>
+                <button aria-label="Menu" onClick={() => setExpanded(curr =>!curr)} className='p-1.5 rounded-lg bg-gray-50 hover:bg-gray-100'>
                     {expanded ? <ChevronFirst/> : <ChevronLast/>}
                 </button>
             </div>
