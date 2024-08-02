@@ -1,5 +1,5 @@
 import { ChevronFirst, ChevronLast, MoreVertical } from 'lucide-react'
-import React, { createContext, useState, useEffect } from 'react'
+import React, { createContext, useState, useLayoutEffect } from 'react'
 import { Link } from 'react-router-dom'
 
 const SidebarContext = createContext()
@@ -17,7 +17,7 @@ export default function Sidebar({children}) {
       };
     
       // useEffect to set initial state and add resize listener
-      useEffect(() => {
+      useLayoutEffect(() => {
         handleResize(); // Set the initial state based on the screen size
         window.addEventListener('resize', handleResize); // Add resize event listener
     
