@@ -16,7 +16,7 @@ export default function Sidebar({children}) {
         }
       };
     
-      // useEffect to set initial state and add resize listener
+      // useLayoutEffect to set initial state and add resize listener
       useLayoutEffect(() => {
         handleResize(); // Set the initial state based on the screen size
         window.addEventListener('resize', handleResize); // Add resize event listener
