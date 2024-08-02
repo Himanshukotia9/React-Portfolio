@@ -34,7 +34,7 @@ export default function Projects() {
                 initial="hidden" whileInView="visible" src={project.image} alt={project.title} className='w-full lg:w-1/3 h-auto border my-auto rounded-sm object-cover'/>
               <motion.div variants={container2(0.1)}
               initial="hidden" whileInView="visible" className='p-6 lg:w-2/3'>
-                <h6 className='mb-2 text-slate-700 font-semibold text-xl'>{project.title}</h6>
+                <h6 className='mb-2 text-slate-700 font-semibold text-xl hover:text-blue-600'><a href={project.link} target='_blank'>{project.title}</a></h6>
                 <p className='mb-4 text-slate-500'>{project.description}</p>
                 <div className='flex flex-wrap'>
                   {project.technologies.map((tech, index) => (
