@@ -7,12 +7,30 @@ import project6 from "/Images/Projects/Match-Mastery.jpg";
 import project7 from "/Images/Projects/Four-Mation.jpg";
 import project8 from "/Images/Projects/Ecommerce-Landing-Page.jpg";
 import project9 from "/Images/Projects/Score-Keeper.jpg";
+import project10 from "/Images/Projects/Shopping-Cart.jpg";
+import project11 from "/Images/Projects/Breeze-Beacon.jpg";
 
 export const HOME_TEXT = `Welcome to my portfolio website! I am thrilled to showcase my skills and projects as a frontend developer. With a passion for creating visually appealing and user-friendly websites, I strive to bring innovative ideas to life through clean and efficient code. From crafting responsive layouts to implementing interactive features, I am constantly pushing the boundaries of web development. Through this portfolio, I invite you to explore my work and witness my dedication to delivering exceptional digital experiences. Join me on this journey as we embark on the exciting world of frontend development together. Let's create something remarkable!`;
 
 export const ABOUT_TEXT = `As a front-end web developer, I have worked as a intern in a company to create visually stunning and functional websites that have enhanced user experience and increased business productivity. My responsibilities included developing and implementing responsive designs, optimising website performance, and ensuring cross-browser compatibility. I have experience in programming languages like HTML, CSS, and JavaScript. Additionally, I have worked with designers to ensure that websites meet branding guidelines. My passion for staying up-to-date with the latest web development trends and technologies has allowed me to deliver innovative solutions that exceed client expectations.`;
 
 export const PROJECTS = [
+  {
+    title: "Breeze Beacon",
+    image: project11,
+    link: 'https://breeze-beacon.vercel.app/w',
+    description:
+      "Breeze Beacon is a weather application designed to provide users with real-time weather updates. It likely includes features such as current temperature, weather conditions, and forecasts for different locations. The app is designed to be intuitive and visually appealing, offering users a quick and easy way to stay informed about the weather in their area or other regions of interest.",
+    technologies: ["React", "React Hooks", "HTML", "CSS", "TailwindCSS", "JavaScript"],
+  },
+  {
+    title: "Shopping Cart",
+    image: project10,
+    link: 'https://shopping-cart-sand-ten.vercel.app/',
+    description:
+      "The shopping cart web app provides essential functionality, allowing users to add items to their cart, remove them, and adjust item quantities. It offers a straightforward and user-friendly interface where customers can manage their selected products efficiently. This basic setup serves as a foundation for online shopping, enabling users to easily control their cart contents before proceeding to checkout.",
+    technologies: ["React", "React Hooks", "HTML", "CSS", "TailwindCSS", "JavaScript"],
+  },
   {
     title: "Coin Counter",
     image: project1,
