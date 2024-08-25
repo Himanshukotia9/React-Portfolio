@@ -21,7 +21,7 @@ export const PROJECTS = [
     link: 'https://breeze-beacon.vercel.app/w',
     description:
       "Breeze Beacon is a weather application designed to provide users with real-time weather updates. It likely includes features such as current temperature, weather conditions, and forecasts for different locations. The app is designed to be intuitive and visually appealing, offering users a quick and easy way to stay informed about the weather in their area or other regions of interest.",
-    technologies: ["React", "React Hooks", "HTML", "CSS", "TailwindCSS", "JavaScript"],
+    technologies: ["React", "Redux", "RTK Query", "React Hooks", "HTML", "CSS", "TailwindCSS", "JavaScript", "API Integration"],
   },
   {
     title: "Shopping Cart",
@@ -29,7 +29,7 @@ export const PROJECTS = [
     link: 'https://shopping-cart-sand-ten.vercel.app/',
     description:
       "The shopping cart web app provides essential functionality, allowing users to add items to their cart, remove them, and adjust item quantities. It offers a straightforward and user-friendly interface where customers can manage their selected products efficiently. This basic setup serves as a foundation for online shopping, enabling users to easily control their cart contents before proceeding to checkout.",
-    technologies: ["React", "React Hooks", "HTML", "CSS", "TailwindCSS", "JavaScript"],
+    technologies: ["React", "Redux", "React Hooks", "HTML", "CSS", "TailwindCSS", "JavaScript"],
   },
   {
     title: "Coin Counter",
