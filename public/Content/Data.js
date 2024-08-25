@@ -44,7 +44,7 @@ export const PROJECTS = [
     image: project2,
     link: 'https://body-balance.vercel.app/',
     description:
-      "Coin Counter is a basic expenses tracking app. It provides a simple and efficient way to track your daily expenses. Users can input various expenditures, categorize them, and monitor their spending habits over time. With its easy-to-use interface, this app helps individuals manage their finances effectively, ensuring they stay within budget and make informed financial decisions.",
+      "Body Balance is a BMI (Body Mass Index) calculator. This web application allows users to input their height and weight to calculate their BMI, providing them with insights into their overall health status based on the calculated value. The site is designed to be straightforward and user-friendly, helping individuals quickly assess their body mass index and understand where they fall within the BMI categories.",
     technologies: ["React", "React Hooks", "HTML", "CSS", "TailwindCSS", "JavaScript"],
   },
   {
