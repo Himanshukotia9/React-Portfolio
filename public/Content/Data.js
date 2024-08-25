@@ -18,7 +18,7 @@ export const PROJECTS = [
   {
     title: "Breeze Beacon",
     image: project11,
-    link: 'https://breeze-beacon.vercel.app/w',
+    link: 'https://breeze-beacon.vercel.app/',
     description:
       "Breeze Beacon is a weather application designed to provide users with real-time weather updates. It likely includes features such as current temperature, weather conditions, and forecasts for different locations. The app is designed to be intuitive and visually appealing, offering users a quick and easy way to stay informed about the weather in their area or other regions of interest.",
     technologies: ["React", "Redux", "RTK Query", "React Hooks", "HTML", "CSS", "TailwindCSS", "JavaScript", "API Integration"],
