@@ -26,7 +26,7 @@ export const PROJECTS = [
   {
     title: "Shopping Cart",
     image: project10,
-    link: 'https://shopping-cart-sand-ten.vercel.app/',
+    link: 'https://booklers.vercel.app/',
     description:
       "The shopping cart web app provides essential functionality, allowing users to add items to their cart, remove them, and adjust item quantities. It offers a straightforward and user-friendly interface where customers can manage their selected products efficiently. This basic setup serves as a foundation for online shopping, enabling users to easily control their cart contents before proceeding to checkout.",
     technologies: ["React", "Redux", "React Hooks", "HTML", "CSS", "TailwindCSS", "JavaScript"],
